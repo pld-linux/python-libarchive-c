@@ -35,6 +35,7 @@ BuildRequires:	python3-pytest
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
+Requires:	libarchive
 Requires:	python-modules >= 1:2.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -51,6 +52,7 @@ ctypes do dynamicznego ładowania i dostępu do biblioteki C.
 Summary:	Python interface to libarchive
 Summary(pl.UTF-8):	Pythonowy interfejs do libarchive
 Group:		Libraries/Python
+Requires:	libarchive
 Requires:	python3-modules >= 1:3.4
 
 %description -n python3-libarchive-c
