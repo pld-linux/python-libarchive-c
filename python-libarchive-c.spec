@@ -65,7 +65,7 @@ ctypes do dynamicznego ładowania i dostępu do biblioteki C.
 
 %prep
 %setup -q -n libarchive-c-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %if %{with python2}
